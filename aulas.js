@@ -31,3 +31,22 @@ function number() {
 }
 
 console.log (number(1, 2, 3, 4));
+
+
+/* Valor x Referencia */ 
+
+function soma (so) {
+    let res = so 
+    res += so 
+    return res 
+}
+let so = 10
+console.log(soma(so));
+
+function mul (mult) {
+    mult.value *= mult.value 
+    return mult
+}
+
+const obj = {value:2}
+console.log (mul(obj));
